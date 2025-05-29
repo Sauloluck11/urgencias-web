@@ -1,0 +1,82 @@
+/* Fondo general blanco y texto negro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    color: #006a00; /* verde oscuro */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Títulos secundarios (los apartados principales) */
+h2 {
+    background-color: #89c8bb; /* verde azulado un poco más oscuro */
+    color: #000000; /* texto negro */
+    cursor: pointer;
+    margin: 15px 0 5px 0;
+    font-size: 1.8em;
+    padding: 12px 20px;
+    border-radius: 25px; /* esquinas redondeadas tipo círculo */
+    user-select: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar fondo del h2 al pasar el cursor */
+h2:hover {
+    background-color: #6db5a8; /* un tono más oscuro al pasar el ratón */
+}
+
+/* Subapartados */
+h3, h4 {
+    color: #006a00; /* verde oscuro */
+    cursor: pointer;
+    margin: 10px 0 5px 15px;
+    font-size: 1.4em;
+    user-select: none;
+}
+
+/* Contenido oculto inicialmente */
+div[style="display: none;"] {
+    display: none;
+    margin-left: 30px;
+    padding: 15px;
+    background-color: #ffbb66; /* naranja más claro */
+    border-radius: 12px;
+    color: #000000;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    box-sizing: border-box;
+}
+
+/* Contenido visible (cuando se muestra por JS) */
+div:not([style="display: none;"]) {
+    margin-left: 30px;
+    padding: 15px;
+    background-color: #ffbb66; /* naranja más claro */
+    border-radius: 12px;
+    color: #000000;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    box-sizing: border-box;
+}
+
+/* Estilo de párrafos */
+p {
+    margin: 0;
+}
+
+/* Evitar que el texto se seleccione al hacer clic en títulos */
+h2, h3, h4 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
